@@ -21,43 +21,38 @@
 					}
 			//Get Grandmas
 				//Normal Grandma; Cookie
-					var grandma = 0;
-					function getGrandma() {
-						if (cookie_ >= 10) {
-							cookie_ -= 10;
-							grandma += 1;
-							document.getElementById("cookie_").innerHTML = cookie_;
-							document.getElementById("grandma").innerHTML = grandma;
+						var grandma = 0;
+						function getGrandma() {
+								cookie_ -= 10;
+								grandma += 1;
+								document.getElementById("cookie_").innerHTML = cookie_;
+								document.getElementById("grandma").innerHTML = grandma;
 						}
-						else if (cookie_ < 10) {
-							alert("not enough cookies! try to get at least ten to buy a grandma! :..)");
-						}
-					}
 				
-			//Grandma Lvl1; Baguette
-				var grandmaL1=0;
-				function getGrandmaL1() {
-					if (baguette >= 15) {
-					baguette -= 15; 
-					grandmaL1 += 1;
-						document.getElementById("baguette").innerHTML=baguette;
-						document.getElementById("grandmaL1").innerHTML=grandmaL1;
-					} 
-					else if (baguette < 15) {
-						alert("not enough baguettes to buy a grandma! get at least 15 baguettes to bribe a good grandma.");
+				//Grandma Lvl1; Baguette
+					var grandmaL1=0;
+					function getGrandmaL1() {
+						if (baguette >= 15) {
+						baguette -= 15; 
+						grandmaL1 += 1;
+							document.getElementById("baguette").innerHTML=baguette;
+							document.getElementById("grandmaL1").innerHTML=grandmaL1;
+						} 
+						else if (baguette < 15) {
+							alert("not enough baguettes to buy a grandma! get at least 15 baguettes to bribe a good grandma.");
+							}
 						}
+				function grandmaBakeL1() {
+					if (grandmaL1 >= 1) {
+						baguette += grandmaL1; 
+						cookie_ += grandmaL1;
+							document.getElementById("baguette").innerHTML=baguette;
+							document.getElementById("cookie_").innerHTML=cookie_;
+						}
+					else if (grandmasL1 < 1) {
+						alert("you don't have any level 1 grandmas! bribe one using 15 baguettes.");	
 					}
-			function grandmaBakeL1() {
-				if (grandmaL1 >= 1) {
-					baguette += grandmaL1; 
-					cookie_ += grandmaL1;
-						document.getElementById("baguette").innerHTML=baguette;
-						document.getElementById("cookie_").innerHTML=cookie_;
 					}
-				else if (grandmasL1 < 1) {
-					alert("you don't have any level 1 grandmas! bribe one using 15 baguettes.");	
-				}
-				}
 		//Grandma Lvl2; Bread
 			var grandmaL2=0;
 			function getGrandmaL2() {
