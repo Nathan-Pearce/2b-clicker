@@ -14,23 +14,25 @@
 				//LVL4 Grandma
 				setInterval(grandmaBakeL4, 4000);
 			};
-				function grandmaBake() {
-				cookie_ += grandma;
-				document.getElementById("cookie_").innerHTML=cookie_;
-				}
-			//Normal Grandma; Cookie
-				var grandma = 0;
-				function getGrandma() {
-					if (cookie_ >= 10) {
-						cookie_ -= 10;
-						grandma += 1;
-						document.getElementById("cookie_").innerHTML = cookie_;
-						document.getElementById("grandma").innerHTML = grandma;
+				//Normal GrandmaBake
+					function grandmaBake() {
+					cookie_ += grandma;
+					document.getElementById("cookie_").innerHTML=cookie_;
 					}
-					else if (cookie_ < 10) {
-						alert("not enough cookies! try to get at least ten to buy a grandma! :..)");
+			//Get Grandmas
+				//Normal Grandma; Cookie
+					var grandma = 0;
+					function getGrandma() {
+						if (cookie_ >= 10) {
+							cookie_ -= 10;
+							grandma += 1;
+							document.getElementById("cookie_").innerHTML = cookie_;
+							document.getElementById("grandma").innerHTML = grandma;
+						}
+						else if (cookie_ < 10) {
+							alert("not enough cookies! try to get at least ten to buy a grandma! :..)");
+						}
 					}
-				}
 				
 			//Grandma Lvl1; Baguette
 				var grandmaL1=0;
