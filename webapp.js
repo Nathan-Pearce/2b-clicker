@@ -1,7 +1,7 @@
 // JavaScript Document	
 	// B	A	K	E	D		G	O	O	D	S
 	//GRANDMA  FUNCTIONS
-		//Normal Grandma; Cookie
+		//Grandma Bake
 			window.onload = function() {
 				//Normal Grandma
 				setInterval(grandmaBake, 4000);
@@ -14,36 +14,37 @@
 				//LVL4 Grandma
 				setInterval(grandmaBakeL4, 4000);
 			};
-			var grandma = 0;
-			function getGrandma() {
-				if (cookie_ >= 10) {
-					cookie_ -= 10;
-					grandma += 1;
-					document.getElementById("cookie_").innerHTML = cookie_;
-					document.getElementById("grandma").innerHTML = grandma;
-				}
-				else if (cookie_ < 10) {
-					alert("not enough cookies! try to get at least ten to buy a grandma! :..)");
-				}
-			}
-			function grandmaBake() {
+				function grandmaBake() {
 				cookie_ += grandma;
 				document.getElementById("cookie_").innerHTML=cookie_;
 				}
-			
-		//Grandma Lvl1; Baguette
-			var grandmaL1=0;
-			function getGrandmaL1() {
-				if (baguette >= 15) {
-				baguette -= 15; 
-				grandmaL1 += 1;
-					document.getElementById("baguette").innerHTML=baguette;
-					document.getElementById("grandmaL1").innerHTML=grandmaL1;
-				} 
-				else if (baguette < 15) {
-					alert("not enough baguettes to buy a grandma! get at least 15 baguettes to bribe a good grandma.");
+			//Normal Grandma; Cookie
+				var grandma = 0;
+				function getGrandma() {
+					if (cookie_ >= 10) {
+						cookie_ -= 10;
+						grandma += 1;
+						document.getElementById("cookie_").innerHTML = cookie_;
+						document.getElementById("grandma").innerHTML = grandma;
+					}
+					else if (cookie_ < 10) {
+						alert("not enough cookies! try to get at least ten to buy a grandma! :..)");
 					}
 				}
+				
+			//Grandma Lvl1; Baguette
+				var grandmaL1=0;
+				function getGrandmaL1() {
+					if (baguette >= 15) {
+					baguette -= 15; 
+					grandmaL1 += 1;
+						document.getElementById("baguette").innerHTML=baguette;
+						document.getElementById("grandmaL1").innerHTML=grandmaL1;
+					} 
+					else if (baguette < 15) {
+						alert("not enough baguettes to buy a grandma! get at least 15 baguettes to bribe a good grandma.");
+						}
+					}
 			function grandmaBakeL1() {
 				if (grandmaL1 >= 1) {
 					baguette += grandmaL1; 
